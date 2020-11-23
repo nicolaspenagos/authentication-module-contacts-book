@@ -1,0 +1,33 @@
+/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * @author Nicolás Penagos Montoya
+ * nicolas.penagosm98@gmail.com
+ **~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+ /*
+ *  Styles
+ */
+ *{
+    margin: 0px;
+    padding: 0px;
+}
+
+div#containerDiv{
+    
+    border: 2px solid black;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+div#headerDiv{
+    background-color:royalblue;
+    width: 600px;
+    height: 45px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+}
