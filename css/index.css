@@ -41,44 +41,38 @@ div#headerDiv{
     line-height: 45px;
 }
 
-div#passwordDiv{
-    margin-top: 10px;
-}
-
-button#login{
-    margin-bottom: 20px;
+div#upperDiv{
     font-family: 'Roboto', sans-serif;
-    color: royalblue;
-    border: solid white;
-    background-color: white;
     font-size: medium;
-}
-
-button#registerButton{
-    height: 35px;
-    width: 250px;
-    background-color: royalblue;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    color: white;
-    font-size: large;
-    border: 2px solid black;
-}
-
-.input{
-    width: 250px;
-    height: 37px;
-    margin-top: 10px;
-    border: 2px solid black;
     padding-left: 10px;
-    font-size: large;
+    height: 40px;
+    line-height: 40px;
+    background-color: #F1F1F1;
+
 }
 
-.inputPassword{
-    border: 2px solid black;
-    height: 35px;
-    padding-left: 10px;
+button#addContactButton{
+    float: right;
+    margin-top: 2.5px;
     font-family: 'Roboto', sans-serif;
-    font-size: larger;
-    width: 150px;
+    font-size: x-large;
+    margin-right: 10px;
+    background-color: #F1F1F1;
+    border: solid #F1F1F1;
+    color: royalblue;
 }
+
+button#logoutButton{
+    float: right;
+    margin-top: 7px;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    margin-right: 10px;
+    border: solid #F1F1F1;
+    background-color: #F1F1F1;
+    color: royalblue;
+}
+
+
+
+

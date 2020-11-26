@@ -41,11 +41,7 @@ div#headerDiv{
     line-height: 45px;
 }
 
-div#passwordDiv{
-    margin-top: 10px;
-}
-
-button#login{
+button#signup{
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
     color: royalblue;
@@ -54,9 +50,9 @@ button#login{
     font-size: medium;
 }
 
-button#registerButton{
+button#loginButton{
     height: 35px;
-    width: 250px;
+    width: 150px;
     background-color: royalblue;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -74,11 +70,3 @@ button#registerButton{
     font-size: large;
 }
 
-.inputPassword{
-    border: 2px solid black;
-    height: 35px;
-    padding-left: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-size: larger;
-    width: 150px;
-}

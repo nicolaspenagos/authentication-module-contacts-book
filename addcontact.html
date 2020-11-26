@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Login</title>
-      <link rel="stylesheet" href="css/login.css">
+      <title>Add contact</title>
+      <link rel="stylesheet" href="css/addcontact.css">
       <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
       <div id="mainDiv">
         <div id="containerDiv">
             <div id= "headerDiv">
-               Login
+               Add contact
             </div>
             <div id="itemsDiv">
-            <input id="emailInput" class="input" placeholder="Email"></input>
-            <input id="passwordInput" class="input" type="password" placeholder="Password"></input>
-            <button id="loginButton">Login</button>
-            <button id="signup">Create an account</div>
+            <input id="nameInput" class="input" placeholder="Name"></input>
+            <input id="telInput" class="input" placeholder="Phone number"></input>
+            <button id="addButton">Add</button>
             </div>
         </div>
     </div>
@@ -37,4 +36,4 @@
   };
   firebase.initializeApp(firebaseConfig);
 </script>
-<script src = "js/login.js"></script>
+<script src = "js/addcontact.js"></script>
