@@ -21,15 +21,25 @@ const headerDiv = document.getElementById('headerDiv');
 auth.onAuthStateChanged(
 
     (user) =>{
-        database.ref('users/'+user.uid).once(
-            'value',
-            (data)=>{
 
-                let userDB = data.val();
-                headerDiv.innerHTML = userDB.name;
+        if(user!== null){
 
-            }
-        );
+            database.ref('users/'+user.uid).once(
+                'value',
+                (data)=>{
+    
+                    let userDB = data.val();
+                    headerDiv.innerHTML = userDB.name;
+    
+                }
+            );
+
+        }else{
+            window.location.href = 'login.html';
+        }
+
+
+        
     }
 
 );

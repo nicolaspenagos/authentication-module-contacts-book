@@ -18,6 +18,17 @@ const passwordInput = document.getElementById('passwordInput');
 const loginButton = document.getElementById('loginButton');
 const signup = document.getElementById('signup');
 
+//User Authentication
+auth.onAuthStateChanged(
+    (user) =>{
+        
+        if(user !== null){
+            window.location.href = 'index.html';
+        }
+
+    }
+);
+
 // -------------------------------------
 // EVENTS
 // -------------------------------------
