@@ -32,7 +32,6 @@ auth.onAuthStateChanged(
                 (data) => {
 
                     let userDB = data.val();
-                    console.log(userDB);
                     userID = userDB.id;
 
                 }
