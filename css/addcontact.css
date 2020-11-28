@@ -52,6 +52,15 @@ button#addButton{
     border: 2px solid black;
 }
 
+button#goBack{
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: royalblue;
+    border: solid white;
+    background-color: white;
+    font-size: medium;
+}
+
 .input{
     width: 250px;
     height: 37px;

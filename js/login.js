@@ -20,9 +20,9 @@ const signup = document.getElementById('signup');
 
 //User Authentication
 auth.onAuthStateChanged(
-    (user) =>{
-        
-        if(user !== null){
+    (user) => {
+
+        if (user !== null) {
             window.location.href = 'index.html';
         }
 
@@ -34,30 +34,40 @@ auth.onAuthStateChanged(
 // -------------------------------------
 loginButton.addEventListener('click', () => {
 
-    alert('Hi');
-    auth.signInWithEmailAndPassword(emailInput.value, passwordInput.value).then(
+    let emailS = emailInput.value;
+    let passwordS = passwordInput.value;
 
-        (data) => {
+    if (emailS != null && emailS != '' && passwordS != null && passwordS != '') {
 
-            window.location.href = 'index.html';
-            passwordInput.value = '';
-            emailInput.value = '';
+        auth.signInWithEmailAndPassword(emailInput.value, passwordInput.value).then(
 
-        }
+            (data) => {
 
-    ).catch(
+                window.location.href = 'index.html';
+                passwordInput.value = '';
+                emailInput.value = '';
 
-        (error) => {
-            
-            alert(error.message)
-            passwordInput.value = '';
-            emailInput.value = '';
+            }
 
-        }
+        ).catch(
 
-    );
+            (error) => {
+
+                alert(error.message)
+                passwordInput.value = '';
+                emailInput.value = '';
+
+            }
+
+        );
+
+    } else {
+        alert('There cannot be empty values');
+    }
+
+
 });
 
-signup.addEventListener('click', ()=>{
+signup.addEventListener('click', () => {
     window.location.href = 'signup.html';
 });
